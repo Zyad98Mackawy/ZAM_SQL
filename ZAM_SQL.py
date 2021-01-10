@@ -2,7 +2,6 @@ DT_sql = ['INTEGER','TEXT','REAL','BLOB','NULL']
 
 def DB_CT(table_name = "zyad",columns=['fname'],type_data=[DT_sql[1]]):
     instruction = "CREATE TABLE " + table_name + " ( "
-    #instruction =     """CREATE TABLE z(fname text,zipcode integer)"""
     for i in range(len(columns)):
         if i != 0 :
             instruction = instruction +" , "
